@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".datos_personales">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#000000"
+            android:hint="Bilardos Bank"
+            android:textColorHint="#ffffff"
+            android:textSize="60sp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos Personales"
+            android:layout_marginTop="120dp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:textSize="50dp"/>
+
+
+        <EditText
+            android:id="@+id/nroCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Nombre"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="220dp"
+            android:alpha="0.5"
+            />
+        <EditText
+            android:id="@+id/nroCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Apellido"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:alpha="0.5"
+            android:layout_marginTop="290dp"
+            />
+        <EditText
+            android:id="@+id/nroCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Fecha de Nacimiento"
+            android:alpha="0.5"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="360dp"
+            />
+        <EditText
+            android:id="@+id/nroCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Contraseña"
+            android:alpha="0.5"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="430dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.55">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="guardar"
+            android:textSize="30dp"
+            android:background="#98f7a4"
+
+            android:layout_marginTop="500dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:text="menu"
+            android:textSize="30dp"
+            android:onClick="eventoMenu"
+            android:background="#98c2f7"
+
+            android:layout_marginTop="580dp"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

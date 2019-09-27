@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Menu">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#000000"
+            android:hint="Bilardos Bank"
+            android:textColorHint="#ffffff"
+            android:textSize="60sp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+
+      android:alpha="0.55">
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="163dp"
+          android:layout_marginTop="90dp"
+          android:text="Pagar o transferir"
+          android:textSize="25dp"
+          android:textColor="#000000"
+          android:onClick="menuPagar"
+          android:background="#98f7a4"
+          />
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="163dp"
+          android:layout_marginTop="253dp"
+          android:text="Ultimos Movimientos"
+          android:textSize="25dp"
+          android:onClick="menuMovimientos"
+          android:background="#98c2f7"
+          />
+
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="164dp"
+          android:layout_marginTop="416dp"
+          android:background="#f7f298"
+          android:text="Modificiar datos personales"
+          android:onClick="menuDatosPersonales"
+          android:textSize="25dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="580dp"
+            android:background="#ee5252"
+            android:onClick="eventoSalir"
+            android:text="Salir"
+            android:textSize="25dp" />
+
+  </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

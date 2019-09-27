@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipoPago">
+        <item>Seleccionar:</item>
+        <item>Transferencia Inmediata</item>
+        <item>Transferencia Interbancaria</item>
+        <item>Compraventa</item>
+    </string-array>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">dds_tp3</string>
+    //  <string name="httphost">http://lsi.no-ip.org:8282/BancoBilardos/rest/cliente</string>
+</resources>
