@@ -65,6 +65,7 @@ public class Pagar extends AppCompatActivity {
         final EditText nroCuenta = findViewById(R.id.nroCuenta);
         final EditText monto = findViewById(R.id.monto);
         final Button btnRealiza = findViewById(R.id.btnRealizar);
+
         btnRealiza.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -106,7 +107,7 @@ public class Pagar extends AppCompatActivity {
 
                 String result = null;
                 try {  //
-                    result = RESTservice.callREST("http://lsi.no-ip.org:8282/BancoBilardos/rest/transferencias", "PUT", j);
+                    result = RESTservice.callREST("http://lsi.no-ip.org:8282/BancoBilardos/rest/transferencias", "POST", j);
                 } catch (Exception e) {
                     Log.d("INFO", e.toString());
                 }
@@ -119,7 +120,7 @@ public class Pagar extends AppCompatActivity {
             protected void onPostExecute(String result) {
                 if (result != null) {
                     if (result.length() > 0) {
-                        Toast notificacion = Toast.makeText(getApplicationContext(), "Transferencia Exitosa"+result , Toast.LENGTH_SHORT);
+                        Toast notificacion = Toast.makeText(getApplicationContext(), "Transferencia Exitosa"+ result , Toast.LENGTH_SHORT);
                             notificacion.show();
                     } else {
                         Toast notificacion = Toast.makeText(getApplicationContext(), "Transferencia fallo. result:" + result, Toast.LENGTH_SHORT);

@@ -18,6 +18,7 @@ import org.json.JSONObject;
 public  class login extends AppCompatActivity {
     public static final String EXTRA_DOCCLIENTE = "com.example.dds_tp.EXTRA_IDCLIENTE";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,10 +69,12 @@ public  class login extends AppCompatActivity {
                 if (result.length() > 0) {
                     try {
                         JSONObject cliente = new JSONObject(result);
-                        Integer documento = cliente.getInt("id");
+                        Integer doc = cliente.getInt("id");
 
                         Intent intent = new Intent(login.this, Menu.class);
-                        intent.putExtra("EXTRA_DOCCLIENTE", documento);
+                        intent.putExtra("Documento", doc);
+                        startActivity(intent);
+
 
                         Toast notificacion = Toast.makeText(getApplicationContext(), "Bienvenido!  " + this.doc, Toast.LENGTH_SHORT);
                         notificacion.show();
@@ -88,6 +91,12 @@ public  class login extends AppCompatActivity {
                 }
             }
         }
+    }
+
+    public void eventoRegistrarse(View view){
+        Intent intent = new Intent(this, Registro.class);
+        startActivity(intent);
+
     }
 }
 

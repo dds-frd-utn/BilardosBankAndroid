@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:background="#000000"
@@ -32,7 +31,7 @@
 
 
         <EditText
-            android:id="@+id/nroCuenta"
+            android:id="@+id/nombre"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Nombre"
@@ -42,7 +41,7 @@
             android:alpha="0.5"
             />
         <EditText
-            android:id="@+id/nroCuenta"
+            android:id="@+id/apellido"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Apellido"
@@ -52,7 +51,7 @@
             android:layout_marginTop="290dp"
             />
         <EditText
-            android:id="@+id/nroCuenta"
+            android:id="@+id/fechaNac"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Fecha de Nacimiento"
@@ -62,7 +61,7 @@
             android:layout_marginTop="360dp"
             />
         <EditText
-            android:id="@+id/nroCuenta"
+            android:id="@+id/contrasenia"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Contraseña"
@@ -77,9 +76,10 @@
         android:layout_height="wrap_content"
         android:alpha="0.55">
         <Button
+            android:id="@+id/actualizar"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="guardar"
+            android:text="actualizar"
             android:textSize="30dp"
             android:background="#98f7a4"
 
@@ -89,7 +89,7 @@
             android:layout_height="78dp"
             android:text="menu"
             android:textSize="30dp"
-            android:onClick="eventoMenu"
+            android:onClick="irAlMenu"
             android:background="#98c2f7"
 
             android:layout_marginTop="580dp"

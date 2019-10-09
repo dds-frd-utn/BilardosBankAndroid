@@ -12,7 +12,16 @@ public class Menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        recibirDato();
     }
+
+    private Integer recibirDato(){
+        Bundle documento = getIntent().getExtras();
+        Integer id = documento.getInt("Documento");
+
+        return id;
+    };
 
     public void menuPagar(View view){
         Intent menuPagar = new Intent(this, Pagar.class);
@@ -22,17 +31,20 @@ public class Menu extends AppCompatActivity {
 
     public void menuMovimientos(View view){
         Intent mov = new Intent(this, Movimientos.class);
+
         startActivity(mov);
 
     }
     public void menuDatosPersonales(View view){
-        Intent datos = new Intent(this, datos_personales.class);
-        startActivity(datos);
+        Integer doc = recibirDato();
+        Intent intent = new Intent(this, datos_personales.class);
+        intent.putExtra("Documento", doc);
+        startActivity(intent);
 
     }
     public void eventoSalir(View view){
-        Intent ingresar = new Intent(this, login.class);
-        startActivity(ingresar);
+        Intent intent = new Intent(this, login.class);
+        startActivity(intent);
 
     }
 }

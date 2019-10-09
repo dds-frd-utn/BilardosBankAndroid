@@ -31,7 +31,7 @@
 
 
         <EditText
-            android:id="@+id/nroCuenta"
+            android:id="@+id/nombre"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Nombre"
@@ -41,7 +41,7 @@
             android:alpha="0.5"
             />
         <EditText
-            android:id="@+id/nroCuenta"
+            android:id="@+id/apellido"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Apellido"
@@ -51,7 +51,7 @@
             android:layout_marginTop="260dp"
             />
         <EditText
-        android:id="@+id/nroCuenta"
+        android:id="@+id/documento"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="Documento"
@@ -61,7 +61,7 @@
         android:layout_marginTop="320dp"
         />
         <EditText
-            android:id="@+id/nroCuenta"
+            android:id="@+id/fechaNac"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Fecha de Nacimiento"
@@ -71,7 +71,7 @@
             android:layout_marginTop="380dp"
             />
         <EditText
-            android:id="@+id/nroCuenta"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Contraseña"
@@ -86,9 +86,10 @@
         android:layout_height="wrap_content"
         android:alpha="0.55">
         <Button
+            android:id="@+id/btnRegistrarse"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="guardar"
+            android:text="registrarse"
             android:textSize="30dp"
             android:background="#98f7a4"
 
